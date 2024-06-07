@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "prefect-nomad"
+version = "0.1.0"
+description = "Prefect worker to run flows in a Nomad execution environment."
+authors = ["Brian Tang <ashrielbrian@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prefect_nomad"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+python-nomad = "2.0.1"
+prefect = "2.19.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
